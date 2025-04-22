@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>डिजिटल मार्केटिङ कोर्स (नेपाली)</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #0066cc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .topics-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 10px;
+        }
+
+        .topic {
+            background-color: #fff;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        .topic:hover {
+            background-color: #eaf2fb;
+        }
+
+        .topic h2 {
+            margin: 0;
+        }
+
+        .content {
+            display: none;
+            padding-top: 10px;
+        }
+
+        footer {
+            background-color: #0066cc;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            .topic {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>डिजिटल मार्केटिङ कोर्स (नेपाली)</h1>
+    </header>
+
+    <main class="topics-container">
+        <div class="topic" onclick="toggleTopic(1)">
+            <h2>१. डिजिटल मार्केटिङको परिचय</h2>
+            <div class="content" id="content1">
+                <p>डिजिटल मार्केटिङ भनेको इन्टरनेट र डिजिटल माध्यम प्रयोग गरेर गरिने मार्केटिङ हो।</p>
+                <p><strong>नेपाली उदाहरण:</strong> फेसबुकमा कपडाको विज्ञापन राख्नु।</p>
+                <p><strong>प्रयोग विधि:</strong> वेबसाइट, सोशल मिडिया, इमेल आदि प्रयोग गरेर व्यापार बढाउने।</p>
+            </div>
+        </div>
+
+        <div class="topic" onclick="toggleTopic(2)">
+            <h2>२. SEO (खोज इन्जिन अनुकूलन)</h2>
+            <div class="content" id="content2">
+                <p>SEO भनेको वेबसाइटलाई Google वा अन्य सर्च इन्जिनमा पहिलो पेजमा ल्याउने प्रक्रिया हो।</p>
+                <p><strong>नेपाली उदाहरण:</strong> "काठमाडौ घुम्न स्थान" खोज्दा तपाईको ब्लग माथि देखिनु।</p>
+                <p><strong>प्रयोग विधि:</strong> राम्रो शीर्षक, कीवर्ड, छिटो लोड हुने साइट बनाउने।</p>
+            </div>
+        </div>
+
+        <div class="topic" onclick="toggleTopic(3)">
+            <h2>३. फेसबुक र इन्स्टाग्राम मार्केटिङ</h2>
+            <div class="content" id="content3">
+                <p>फेसबुक र इन्स्टाग्राममार्फत व्यापारको प्रचार गर्नु मार्केटिङ हो।</p>
+                <p><strong>नेपाली उदाहरण:</strong> Instagram मा मिठाइ बेच्ने पेज चलाउनु।</p>
+                <p><strong>प्रयोग विधि:</strong> आकर्षक फोटो, भिडियो, पोस्ट, र विज्ञापन प्रयोग गर्नु।</p>
+            </div>
+        </div>
+
+        <div class="topic" onclick="toggleTopic(4)">
+            <h2>४. YouTube मार्केटिङ</h2>
+            <div class="content" id="content4">
+                <p>YouTube मा भिडियो बनाएर ब्रान्ड प्रचार गर्नु YouTube मार्केटिङ हो।</p>
+                <p><strong>नेपाली उदाहरण:</strong> मोबाइल समीक्षा गर्ने च्यानलमार्फत ब्रान्ड प्रमोट गर्नु।</p>
+                <p><strong>प्रयोग विधि:</strong> जानकारीमूलक भिडियो अपलोड, SEO टाइटल र थम्बनेल प्रयोग गर्नु।</p>
+            </div>
+        </div>
+
+        <div class="topic" onclick="toggleTopic(5)">
+            <h2>५. Email मार्केटिङ</h2>
+            <div class="content" id="content5">
+                <p>ग्राहकलाई इमेलमार्फत जानकारी वा अफर पठाउनु Email मार्केटिङ हो।</p>
+                <p><strong>नेपाली उदाहरण:</strong> पसलले नयाँ सामानको अफर इमेलमा पठाउनु।</p>
+                <p><strong>प्रयोग विधि:</strong> नाम अनुसार इमेल पठाउने, विषय आकर्षक राख्ने।</p>
+            </div>
+        </div>
+
+        <div class="topic" onclick="toggleTopic(6)">
+            <h2>६. Google Ads (PPC)</h2>
+            <div class="content" id="content6">
+                <p>Google Ads मा पैसा तिरेर विज्ञापन देखाउने प्रणाली हो।</p>
+                <p><strong>नेपाली उदाहरण:</strong> "Nepali Shoes" खोज्दा तपाईको साइटको विज्ञापन देखिनु।</p>
+                <p><strong>प्रयोग विधि:</strong> सही कीवर्ड चयन, आकर्षक विज्ञापन लेख्ने, र बजेट सेट गर्ने।</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>डेभलपर: नबिन कुमार साहाकारी</p>
+    </footer>
+
+    <script>
+        function toggleTopic(id) {
+            const content = document.getElementById(`content${id}`);
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
